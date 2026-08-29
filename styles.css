@@ -389,4 +389,46 @@ a {
     font-size: 0.9rem;
 }
 
+@media (min-width: 768px) {
+    .header {
+        padding: 32px 40px;
+    }
 
+    .logo img {
+        width: 120px;
+    }
+
+    .nav-links {
+        gap: 32px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .hero-top {
+        padding: 80px 40px 410px;
+        background-image: url("./images/bg-curvy-desktop.svg");
+        background-size: 100% auto;
+    }
+
+    .hero-image {
+        max-width: 520px;
+        margin-top: -70px;
+    }
+
+    .hero-content {
+        padding: 30px 40px 110px;
+    }
+
+    .hero-intro, .hero-description, .get-started-btn {
+        transform: translateY(-400px);
+    }
+
+    .hero-intro {
+        max-width: 650px;
+        font-size: 2.2rem;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+}
