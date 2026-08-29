@@ -7,18 +7,21 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 <body>
   <header class="header">
-    <nav class="navbar">
+    <nav class="nav-bar">
       <a href="#home" class="logo">
         <img src="./images/logo.svg" alt="Logo">
       </a>
-      <a href="#home">Features</a>
-      <a href="#home">Team</a>
-      <a href="#home">Sign In</a>
+      <div class="nav-links">
+        <a href="#home">Features</a>
+        <a href="#home">Team</a>
+        <a href="#home">Sign In</a>
+      </div>
     </nav>
   </header>
   <main>
@@ -84,7 +87,7 @@
         <img src="./images/illustration-stay-productive.png" alt="Stay productive illustration">
       </div>
       <div class="productivity-content">
-          <h3 class="productivity-title">Stay productive, wherever you are</h3>
+          <h2 class="productivity-title">Stay productive, wherever you are</h2>
           <p class="productivity-description">
             Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
             storage needs.
@@ -128,7 +131,7 @@
               become a well-oiled collaboration machine.
             </p>
           </div>
-          <img src="./images/profile-3.jpg" alt="profile-3">
+          <img src="./images/profile-3.jpg" alt="profile-3" class="testimony-image">
           <p class="testimony-name">Iva Boyd</p>
           <p class="testimony-company">Founder & CEO, Huddle</p>
         </article>
@@ -150,7 +153,7 @@
   <footer class="footer">
     <div class="location">
       <img src="./images/icon-location.svg" alt="" class="footer-icons">
-      <p></p>
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
         dolore magna aliqua
       </p>
