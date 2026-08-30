@@ -44,6 +44,7 @@ a {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding: 0 10px;
 }
 
 .logo {
@@ -437,32 +438,41 @@ a {
         font-size: 1rem;
     }
 
+    .hero {
+        position: relative;
+        background-color: hsl(217, 28%, 15%);
+        background-image: url("./images/bg-curvy-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100% auto;
+    }
     .hero-top {
         padding: 80px 40px 100px;
-        background-image: url("./images/bg-curvy-desktop.svg");
-        background-size: 100% auto;
+        background-image: none;
+        background-color: transparent;
     }
 
     .hero-image {
         max-width: 520px;
-        margin-top: -70px;
     }
 
     .hero-content {
-        padding: 30px 40px 110px;
+        background-color: transparent;
+        padding: 30px 40px 10px;
     }
 
     .hero-intro {
         max-width: 650px;
         font-size: 2.2rem;
         line-height: 1.4;
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
     }
 
     .hero-description {
         max-width: 560px;
         font-size: 0.7rem;
-        margin-bottom: 32px;
+        line-height: 1.6;
+        margin: 0 auto 32px;
     }
 
     .get-started-btn {
@@ -609,3 +619,332 @@ a {
         margin-top: 20px;
     }
 }
+
+@media (min-width: 1024px) {
+    .header {
+        padding: 50px 70px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .nav-links {
+        gap: 50px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .hero {
+        position: relative;
+        background-color: hsl(217, 28%, 15%);
+        background-image: url("./images/bg-curvy-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100% auto;
+    }
+
+    .hero-top {
+        padding: 40px 40px 60px;
+        background-image: none;
+        background-color: transparent;
+
+    }
+
+    .hero-image {
+        max-width: 720px;
+    }
+
+    .hero-content {
+        background-color: transparent;
+        padding: 20px 40px 380px;
+    }
+
+    .hero-text {
+        transform: translateY(50px);
+    }
+
+     .hero-intro {
+        max-width: 750px;
+        font-size: 2.5rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .hero-description {
+        max-width: 590px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 32px;
+    }
+
+    .get-started-btn {
+        width: 280px;
+        padding: 17px 20px;
+        font-size: 1rem;
+    }
+
+    .features {
+        padding: 20px 60px 140px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+        margin: 0 auto;
+        column-gap: 120px;
+        row-gap: 90px;
+    }
+
+    .feature-card {
+        max-width: 380px;
+    }
+
+    .feature-card > img {
+        margin-bottom: 25px;
+    }
+
+    .feature-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .feature-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .productivity {
+        display: flex;
+        align-items: center;
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 80px 60px 150px;
+        gap: 70px;
+    }
+
+    .productivity-image {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .productivity-image img {
+        width: 100%;
+    }
+
+    .productivity-content {
+        flex: 1;
+        max-width: 550px;
+    }
+
+    .productivity-title {
+        max-width: 400px;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .productivity-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .see-how-btn {
+        font-size: 1rem;
+    }
+
+    .testimony {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 20px 50px 190px;
+    }
+
+    .testimony > img {
+        position: relative;
+        z-index: 0;
+        width: 55px;
+        margin-left: -10px;
+        margin-bottom: -10px;
+    }
+
+    .testimony-grid {
+        position: relative;
+        z-index: 1;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: none;
+        gap: 35px;
+    }
+
+    .testimony-card {
+        padding: 38px 28px 28px;
+    }
+
+    .testimony-description {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    .testimony-name {
+        font-size: 0.8rem;
+    }
+
+    .testimony-company {
+        font-size: 0.65rem;
+    }
+
+    .early-access {
+        width: calc(100% - 80px);
+        max-width: 860px;
+        margin: 0 auto -120px;
+        padding: 45px 70px 40px;
+    }
+
+    .early-access-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .early-access-description {
+        max-width: 650px;
+        margin: 0 auto 35px;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .form input {
+        flex: 1;
+        height: 50px;
+        padding: 0 30px;
+        border: none;
+        border-radius: 30px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .form button {
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 30px;
+        background-color: hsl(198, 60%, 50%);
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .footer {
+        padding: 200px 70px 80px;
+        display: grid;
+
+        /*
+            Logo gets its own row.
+            Footer content sits underneath.
+        */
+        grid-template-columns:
+            minmax(280px, 2fr)
+            minmax(180px, 1fr)
+            100px
+            100px
+            140px;
+        column-gap: 50px;
+        row-gap: 35px;
+        align-items: start;
+    }
+
+    .footer-logo {
+        grid-column: 1 / -1;
+        margin: 0;
+    }
+
+    .footer-logo img {
+        width: 175px;
+    }
+
+    .location {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 0;
+    }
+
+    .location .footer-icons {
+        width: 18px;
+        flex-shrink: 0;
+        margin-top: 6px;
+    }
+
+    .location p {
+        max-width: 330px;
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        align-items: center;
+        column-gap: 15px;
+        row-gap: 20px;
+        margin: 0;
+    }
+
+    .contact .footer-icons {
+        width: 18px;
+        justify-self: center;
+    }
+
+    .contact p {
+        margin: 0;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .footer-links + .footer-links {
+        margin-top: 0;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        grid-column: auto;
+        display: flex;
+        justify-content: flex-start;
+        gap: 12px;
+        margin: 0;
+    }
+
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+
+    .social-links i {
+        font-size: 0.9rem;
+    }
+}
+
